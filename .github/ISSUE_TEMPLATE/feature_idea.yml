@@ -1,0 +1,28 @@
+name: Feature idea
+description: Something you would like noapps to do.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        noapps works offline, without an account and without a cloud. Ideas that keep it that way have the best chance.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      placeholder: What would you like to do in noapps?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters to you
+      placeholder: What do you do today instead?
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iOS
+        - Android
+        - Both
