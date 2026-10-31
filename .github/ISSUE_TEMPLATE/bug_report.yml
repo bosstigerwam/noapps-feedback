@@ -1,0 +1,61 @@
+name: Bug report
+description: Something in noapps does not work as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping. Never post backups, keys, guarded layer sentences, passwords or personal data. Cover private content on screenshots.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      placeholder: "1.23.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - iOS
+        - Android
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone and system version
+      placeholder: "iPhone 15, iOS 26.1"
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Where in the app
+      placeholder: "Notes, Guarded Layers, Letters, Workout ..."
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
+      description: Drag images in here. Cover anything private first.
